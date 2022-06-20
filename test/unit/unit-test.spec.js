@@ -11,21 +11,20 @@
 // see: https://github.com/digitalbazaar/bedrock-test/issues/16 . c8 is drop replacement for nyc coverage reporting tool
 /*global describe, it*/
 
-import helloWorld from "../../src/index.js";
 import * as assert from 'assert';
 import * as chai from 'chai';
 
 let expect = chai.expect;
+import {isString,isNumber} from "../../src/index.js";
 
 describe('unit Tests', function() {
-    it('should return Hello World', function() {
-        expect(helloWorld('yo')).to.equal('Hello World yo');
+    it('should return true for isString(hello)', function () {
+        const val = isString('hello');
+        expect(val).to.eql(true);
+    });
+    it('should return true for isNumber(1)', function () {
+        const val = isNumber(1);
+        expect(val).to.eql(true);
     });
 
-    describe('#indexOf()', function() {
-        it('should return -1 when the value is not present', function() {
-            expect([1, 2, 3].indexOf(4)).to.equal(-1);
-            assert.equal([1, 2, 3].indexOf(4), -1); // or this, but prefer the above syntax
-        });
-    });
 });
