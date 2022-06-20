@@ -1,8 +1,5 @@
-# template-nodejs
-A template project for nodejs. Has integrated linting, testing,
-coverage, reporting, GitHub actions for publishing to npm repository, dependency updates and other goodies.
-
-Easily use this template to quick start a production ready nodejs project template.
+# libcommonutils
+Common libraries used by various core.ai modules
 
 ## Code Guardian
 [![<app> build verification](https://github.com/aicore/template-nodejs/actions/workflows/build_verify.yml/badge.svg)](https://github.com/aicore/template-nodejs/actions/workflows/build_verify.yml)

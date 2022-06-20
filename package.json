@@ -1,8 +1,8 @@
 {
-  "name": "@aicore/template-nodejs",
+  "name": "@aicore/libcommonutils",
   "version": "1.0.6",
-  "description": "Template for nodejs with unit gulp build, test, coverage, code guardian, github and Other defaults",
-  "main": "index.js",
+  "description": "Common util libraries used by various modules. This library is created to prevent code duplication",
+  "main": "src/index.js",
   "type": "module",
   "keywords": [
     "template",
@@ -39,7 +39,7 @@
     "type": "git",
     "url": "git+https://github.com/aicore/template-nodejs.git"
   },
-  "author": "Arun, core.ai",
+  "author": "Charly, core.ai",
   "license": "AGPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/aicore/template-nodejs/issues"
