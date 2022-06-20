@@ -32,17 +32,8 @@
  * const Metrics = brackets.getModule("utils/Metrics");
  * ```
  *
- * @module hello
+ * @module  libcommonutils
+ *
  */
 
-/**
- * says hello world
- * @param name
- * @returns {string}
- * @type {function}
- */
-function helloWorld(name) {
-    return "Hello World " + name;
-}
-
-export default helloWorld;
+export {isNumber, isString} from './utils/common.js';
