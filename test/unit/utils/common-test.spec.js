@@ -51,18 +51,21 @@ describe('unit  for src/utils/common.js', function () {
         expect(isObject({})).to.equal(true);
     });
     it('isObject should return true for valid Object', function () {
+        // eslint-disable-next-line no-new-object
         expect(isObject(new Object())).to.equal(true);
     });
     it('isObject should return false for valid string', function () {
         expect(isObject('hello')).to.equal(false);
     });
     it('isObject should return false for valid string', function () {
+        // eslint-disable-next-line no-new-wrappers
         expect(isObject(new String('hello'))).to.equal(false);
     });
     it('isObject should return false for valid number', function () {
         expect(isObject(1)).to.equal(false);
     });
     it('isObject should return false for valid number', function () {
+        // eslint-disable-next-line no-new-wrappers
         expect(isObject(new Number(1))).to.equal(false);
     });
 
@@ -83,27 +86,32 @@ describe('unit  for src/utils/common.js', function () {
         expect(isBoolean(false)).to.equal(true);
     });
     it('isBoolean should return true for valid boolean', function () {
+        // eslint-disable-next-line no-new-wrappers
         expect(isBoolean(new Boolean(true))).to.equal(true);
     });
     it('isBoolean should return true for valid boolean', function () {
+        // eslint-disable-next-line no-new-wrappers
         expect(isBoolean(new Boolean(false))).to.equal(true);
     });
     it('isBoolean should return false for valid string', function () {
         expect(isBoolean('hello')).to.equal(false);
     });
     it('isBoolean should return false for valid string', function () {
+        // eslint-disable-next-line no-new-wrappers
         expect(isBoolean(new String('hello'))).to.equal(false);
     });
     it('isBoolean should return false for valid number', function () {
         expect(isBoolean(1)).to.equal(false);
     });
     it('isBoolean should return false for valid number', function () {
+        // eslint-disable-next-line no-new-wrappers
         expect(isBoolean(new Number(1))).to.equal(false);
     });
     it('isBoolean should return false for valid Object', function () {
         expect(isBoolean({})).to.equal(false);
     });
     it('isBoolean should return false for valid Object', function () {
+        // eslint-disable-next-line no-new-object
         expect(isBoolean(new Object())).to.equal(false);
     });
     it('isBoolean should return false for null Object', function () {
