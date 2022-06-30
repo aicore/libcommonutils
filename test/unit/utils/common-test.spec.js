@@ -1,22 +1,15 @@
 /*global describe, it*/
 import * as assert from 'assert';
 import * as chai from 'chai';
-import {isNumber, isString} from "../../../src/utils/common.js";
+import {isBoolean, isNumber, isObject, isString} from "../../../src/utils/common.js";
 
 
 let expect = chai.expect;
 
-function testThrow() {
-    throw 'Required';
-}
-
 describe('unit  for src/utils/common.js', function () {
     it('call isNumber with 1', function () {
         expect(isNumber(1)).to.equal(true);
-        //testThrow();
-        expect(() => {
-            testThrow();
-        }).to.throw('Required');
+
     });
     it('isNumber should return false', function () {
         expect(isNumber("1")).to.equal(false);
@@ -53,5 +46,67 @@ describe('unit  for src/utils/common.js', function () {
     });
     it('should return false for null', function () {
         expect(isString(null)).to.equal(false);
+    });
+    it('isObject should return true for valid Object', function () {
+        expect(isObject({})).to.equal(true);
+    });
+    it('isObject should return true for valid Object', function () {
+        expect(isObject(new Object())).to.equal(true);
+    });
+    it('isObject should return false for valid string', function () {
+        expect(isObject('hello')).to.equal(false);
+    });
+    it('isObject should return false for valid string', function () {
+        expect(isObject(new String('hello'))).to.equal(false);
+    });
+    it('isObject should return false for valid number', function () {
+        expect(isObject(1)).to.equal(false);
+    });
+    it('isObject should return false for valid number', function () {
+        expect(isObject(new Number(1))).to.equal(false);
+    });
+
+    it('isObject should return false for valid boolean', function () {
+        expect(isObject(true)).to.equal(false);
+    });
+    it('isObject should return false for valid boolean', function () {
+        expect(isObject(false)).to.equal(false);
+    });
+    it('isObject should return false for null', function () {
+        expect(isObject(null)).to.equal(false);
+    });
+
+    it('isBoolean should return true for valid boolean', function () {
+        expect(isBoolean(true)).to.equal(true);
+    });
+    it('isBoolean should return true for valid boolean', function () {
+        expect(isBoolean(false)).to.equal(true);
+    });
+    it('isBoolean should return true for valid boolean', function () {
+        expect(isBoolean(new Boolean(true))).to.equal(true);
+    });
+    it('isBoolean should return true for valid boolean', function () {
+        expect(isBoolean(new Boolean(false))).to.equal(true);
+    });
+    it('isBoolean should return false for valid string', function () {
+        expect(isBoolean('hello')).to.equal(false);
+    });
+    it('isBoolean should return false for valid string', function () {
+        expect(isBoolean(new String('hello'))).to.equal(false);
+    });
+    it('isBoolean should return false for valid number', function () {
+        expect(isBoolean(1)).to.equal(false);
+    });
+    it('isBoolean should return false for valid number', function () {
+        expect(isBoolean(new Number(1))).to.equal(false);
+    });
+    it('isBoolean should return false for valid Object', function () {
+        expect(isBoolean({})).to.equal(false);
+    });
+    it('isBoolean should return false for valid Object', function () {
+        expect(isBoolean(new Object())).to.equal(false);
+    });
+    it('isBoolean should return false for null Object', function () {
+        expect(isBoolean(null)).to.equal(false);
     });
 });

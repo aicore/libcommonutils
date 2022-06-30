@@ -36,4 +36,4 @@
  *
  */
 
-export {isNumber, isString} from './utils/common.js';
+export {isNumber, isString, isObject, isBoolean} from './utils/common.js';

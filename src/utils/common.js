@@ -1,3 +1,4 @@
+// @INCLUDE_IN_API_DOCS
 /** This is a description of the isString function.
  *  This function checks if object is sting or not
  * @param {Object} str - Take any Object
@@ -21,4 +22,39 @@ export function isNumber(number) {
         return false;
     }
     return (typeof number === 'number' || number instanceof Number);
+}
+
+/** This is a description of the isObject function.
+ *  This function checks if object is valid JS Object or not
+ * @param {Object} object - Take any Object
+ * @return {boolean}  - true if it is an Object false otherwise
+ * */
+
+export function isObject(object) {
+    if (object == null) {
+        return false;
+    }
+    if (isString(object)) {
+        return false;
+    }
+    if (isBoolean(object)) {
+        return false;
+    }
+    if (isNumber(object)) {
+        return false;
+    }
+    return typeof object === 'object';
+}
+
+/** This is a description of the isBoolean function.
+ *  This function checks if object is valid boolean Object or not
+ * @param {Object} boolean - Take any Object
+ * @return {boolean}  - true if it is a valid boolean false otherwise
+ * */
+
+export function isBoolean(boolean) {
+    if (boolean == null) {
+        return false;
+    }
+    return (typeof boolean === 'boolean' || boolean instanceof Boolean);
 }
