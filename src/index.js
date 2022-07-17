@@ -37,3 +37,4 @@
  */
 
 export {isNumber, isString, isObject, isBoolean} from './utils/common.js';
+export {getMySqlConfigs}  from './utils/configs.js';
