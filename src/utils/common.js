@@ -69,7 +69,7 @@ export function isObjectEmpty(obj) {
     if (!isObject(obj)) {
         throw new Error('Not a valid Object');
     }
-
+    //https://stackoverflow.com/questions/679915/how-do-i-test-for-an-empty-javascript-object
     // noinspection LoopStatementThatDoesntLoopJS
     for (let i in obj) { //NOSONAR
         return false;
