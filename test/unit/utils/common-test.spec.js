@@ -1,7 +1,7 @@
 /*global describe, it*/
 import * as assert from 'assert';
 import * as chai from 'chai';
-import {isBoolean, isNumber, isObject, isString} from "../../../src/utils/common.js";
+import {isBoolean, isNumber, isObject, isObjectEmpty, isString} from "../../../src/utils/common.js";
 
 
 let expect = chai.expect;
@@ -116,5 +116,22 @@ describe('unit  for src/utils/common.js', function () {
     });
     it('isBoolean should return false for null Object', function () {
         expect(isBoolean(null)).to.equal(false);
+    });
+
+    it('isObjectEmpty should return true if object ie empty', function () {
+        expect(isObjectEmpty({})).to.equal(true);
+    });
+
+    it('isObjectEmpty should return false if object is not empty', function () {
+        expect(isObjectEmpty({'hello': 'world'})).to.equal(false);
+    });
+
+    it('isObjectEmpty throw exception if non object is passed', function () {
+        try {
+            isObjectEmpty(null);
+        } catch (e) {
+            expect(e.toString()).to.eql('Error: Not a valid Object');
+        }
+
     });
 });
