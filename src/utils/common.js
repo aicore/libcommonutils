@@ -61,7 +61,7 @@ export function isBoolean(boolean) {
 
 /** This is a description of the isObjectEmpty function.
  *  This function checks if object is Empty or not
- * @param {Object} boolean - Take any Object
+ * @param {Object} obj - Take any Object
  * @throw if not valid object
  * @return {boolean}  - true if Object is empty false otherwise
  * */
@@ -69,7 +69,9 @@ export function isObjectEmpty(obj) {
     if (!isObject(obj)) {
         throw new Error('Not a valid Object');
     }
-    for (let i in obj) {
+
+    // noinspection LoopStatementThatDoesntLoopJS
+    for (let i in obj) { //NOSONAR
         return false;
     }
     return true;
