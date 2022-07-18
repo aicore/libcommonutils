@@ -51,8 +51,7 @@ This function checks if object is Empty or not
 
 ### Parameters
 
-*   `obj`  
-*   `boolean` **[Object][1]** Take any Object
+*   `obj` **[Object][1]** Take any Object
 
 Returns **[boolean][2]** true if Object is empty false otherwise
 
