@@ -44,6 +44,18 @@ This function checks if object is valid boolean Object or not
 
 Returns **[boolean][2]** true if it is a valid boolean false otherwise
 
+## isObjectEmpty
+
+This is a description of the isObjectEmpty function.
+This function checks if object is Empty or not
+
+### Parameters
+
+*   `obj`  
+*   `boolean` **[Object][1]** Take any Object
+
+Returns **[boolean][2]** true if Object is empty false otherwise
+
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
