@@ -1,5 +1,5 @@
 import * as crypto from "crypto";
-
+// @INCLUDE_IN_API_DOCS
 /**
  * @typedef {Object} MySqlConfigs
  * @property {string} host - hostname or ip address
