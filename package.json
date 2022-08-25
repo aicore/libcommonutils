@@ -1,6 +1,6 @@
 {
   "name": "@aicore/libcommonutils",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Common util libraries used by various modules. This library is created to prevent code duplication",
   "main": "src/index.js",
   "type": "module",
