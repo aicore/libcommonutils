@@ -16,12 +16,15 @@ Type: [Object][1]
 
 It returns a JavaScript object with the host, port, database, user, and password for a MySQL database
 
-Returns **[MySqlConfigs][3]** An object with the following properties:
-host: The value of the environment variable MY\_SQL\_SERVER or 'localhost'
-port: The value of the environment variable MY\_SQL\_SERVER\_PORT or '3306'
-database: The value of the environment variable MY\_SQL\_SERVER\_DB or a random hex string
-user: The value of the environment variable MY\_SQL\_USER or a random hex string
-password :  The value of the environment variable MY\_SQL\_PASSWORD or a random hex string
+Returns **[MySqlConfigs][3]** An object with the following properties:    `host`: The value of the environment variable MY_SQL_SERVER or 'localhost'
+
+    port: The value of the environment variable MY_SQL_SERVER_PORT or '3306'
+
+    database: The value of the environment variable MY_SQL_SERVER_DB or a random hex string
+
+    user: The value of the environment variable MY_SQL_USER or a random hex string
+
+    password :  The value of the environment variable MY_SQL_PASSWORD or a random hex string
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 

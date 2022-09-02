@@ -38,3 +38,4 @@
 
 export {isNumber, isString, isObject, isBoolean, isObjectEmpty} from './utils/common.js';
 export {getMySqlConfigs} from './utils/configs.js';
+export {HTTP_STATUS_CODES} from './const/http.js';
