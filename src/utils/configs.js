@@ -13,10 +13,15 @@ import * as crypto from "crypto";
 /**
  * It returns a JavaScript object with the host, port, database, user, and password for a MySQL database
  * @returns  {MySqlConfigs} An object with the following properties:
- *     host: The value of the environment variable MY_SQL_SERVER or 'localhost'
+ *
+ *     `host`: The value of the environment variable MY_SQL_SERVER or 'localhost'
+ *
  *     port: The value of the environment variable MY_SQL_SERVER_PORT or '3306'
+ *
  *     database: The value of the environment variable MY_SQL_SERVER_DB or a random hex string
+ *
  *     user: The value of the environment variable MY_SQL_USER or a random hex string
+ *
  *     password :  The value of the environment variable MY_SQL_PASSWORD or a random hex string
  */
 
@@ -34,4 +39,3 @@ export function getMySqlConfigs() {
         'password': password
     };
 }
-
