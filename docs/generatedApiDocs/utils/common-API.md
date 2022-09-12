@@ -11,6 +11,16 @@ This function checks if object is sting or not
 
 Returns **[boolean][2]** true if it is a string false otherwise
 
+## isStringEmpty
+
+Returns true if the given value is a string and is empty.
+
+### Parameters
+
+*   `str`  The string to check.
+
+Returns **any** true
+
 ## isNumber
 
 This is a description of the isNumber function.
