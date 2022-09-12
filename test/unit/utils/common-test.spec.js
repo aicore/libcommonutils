@@ -1,7 +1,7 @@
 /*global describe, it*/
 import * as assert from 'assert';
 import * as chai from 'chai';
-import {isBoolean, isNumber, isObject, isObjectEmpty, isString} from "../../../src/utils/common.js";
+import {isBoolean, isNumber, isObject, isObjectEmpty, isString, isStringEmpty} from "../../../src/utils/common.js";
 
 
 let expect = chai.expect;
@@ -133,5 +133,14 @@ describe('unit  for src/utils/common.js', function () {
             expect(e.toString()).to.eql('Error: Not a valid Object');
         }
 
+    });
+    it('should pass of empty sting', function (){
+        expect(isStringEmpty('')).equal(true);
+    });
+    it('should pass of empty sting', function (){
+        expect(isStringEmpty('   ')).equal(true);
+    });
+    it('should fail of empty string is valid', function (){
+        expect(isStringEmpty(' a ')).equal(false);
     });
 });

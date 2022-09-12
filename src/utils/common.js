@@ -11,6 +11,15 @@ export function isString(str) {
     return (typeof str === 'string' || str instanceof String);
 }
 
+/**
+ * Returns true if the given value is a string and is empty.
+ * @param str - The string to check.
+ * @returns true
+ */
+export function isStringEmpty(str) {
+    return isString(str) && str.trim() === '';
+}
+
 /** This is a description of the isNumber function.
  *  This function checks if object is Number or not
  * @param {Object} number - Take any Object
