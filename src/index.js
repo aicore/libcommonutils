@@ -39,3 +39,4 @@
 export {isNumber, isString, isObject, isBoolean, isObjectEmpty, isStringEmpty} from './utils/common.js';
 export {getMySqlConfigs} from './utils/configs.js';
 export {HTTP_STATUS_CODES} from './const/http.js';
+export {COCO_DB_FUNCTIONS} from './const/cocoDBWSAPI.js';
