@@ -11,5 +11,6 @@ export const COCO_DB_FUNCTIONS = {
     getFromIndex: 'getFromIndex',
     createDb: 'createDb',
     deleteDb: 'deleteDb',
-    mathAdd: 'mathAdd'
+    mathAdd: 'mathAdd',
+    query: 'query'
 };
