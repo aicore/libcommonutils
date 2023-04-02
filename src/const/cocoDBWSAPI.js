@@ -4,6 +4,7 @@ export const COCO_DB_FUNCTIONS = {
     createTable: 'createTable',
     put: 'put',
     deleteDocument: 'deleteDocument',
+    deleteDocuments: 'deleteDocuments',
     deleteTable: 'deleteTable',
     createIndex: 'createIndex',
     update: 'update',
